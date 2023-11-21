@@ -10,7 +10,7 @@
             <div>
                 <h1>Om oss</h1>
                 <p>
-                  Vi på AI-kunskap brinner för att göra AI-utbildning tillgänglig och engagerande för alla. </p>
+                  Vi på AI-Akademin brinner för att göra AI-utbildning tillgänglig och engagerande för alla. </p>
                   <p>Med en bakgrund inom datateknik och pedagogik strävar vi efter att erbjuda workshops och föreläsningar som kombinerar teknisk expertis med en lärorik upplevelse.
                 </p>
                 <br>
@@ -68,6 +68,28 @@ background: linear-gradient(166deg, rgb(88, 165, 253) 0%, rgb(46, 145, 250) 38%,
   overflow: hidden;
   display:flex;
   justify-content: center;
+}
+.right-section p{
+  margin-top: 1rem;
+}
+@media (max-width: 800px) {
+  .about-us-page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-section{
+    display: none;
+  }
+  .content{
+    grid-template-columns: 1fr;
+    width:100%;
+  }
+  .right-section{
+    width:100%;
+    padding-left:2rem;
+    padding-right: 2rem;
+  }
 }
 
 

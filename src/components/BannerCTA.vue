@@ -2,12 +2,12 @@
     <div id="contact" class="banner-cta" :style="{ backgroundColor: bgColor }">
         <div class="content">
             <div class="avatar">
-                <img :src="avatarImg" alt="Avatar">
+                <img src="../assets/Philip.jpg" alt="Avatar">
             </div>
             <div class="text">
                 <h2>{{ title }}</h2>
                 <p>Vi tar gärna emot förfrågningar och tankar ni har, så tveka inte att höra av er</p>
-                <button class="cta-button"><a href="mailto:philip_gullberg@hotmail.com">{{ ctaText }}</a></button>
+                <a href="mailto:philip_gullberg@hotmail.com"><button class="cta-button">{{ ctaText }}</button></a>
             </div>
         </div>
     </div>
@@ -65,6 +65,18 @@ h2 {
 
 .cta-button:hover {
   background-color: #0056b3;
+}
+@media (max-width: 800px) {
+  h2{
+    font-size: 2rem;
+  }
+  .content{
+    padding:2rem;
+    padding-bottom: 3rem;
+  }
+  .avatar img{
+    display: none;
+  }
 }
 </style>
 

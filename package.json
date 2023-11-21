@@ -2,10 +2,10 @@
   "name": "aikunskap",
   "version": "0.0.0",
   "private": true,
-  "homepage":"https://{philip.gullberg}.github.io/{AI-Akademin}/",
+  "homepage":"https://philip.gullberg.github.io/AI-Akademin/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "preview": "vite preview",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d dist"

@@ -1,16 +1,37 @@
 <template>
     <div id="services" class="services">
-        <div class="service-card" v-for="(service, index) in services" :key="index">
+        <div class="service-card">
             <div class="service-image">
-                <img :src="service.image" :alt="service.title">
+                <img src="https://www.eschoolnews.com/files/2023/07/arts-education-STEAM.jpeg" alt="Workshops">
             </div>
             <div class="service-info">
-                <h2>{{ service.title }}</h2>
-                <p>{{ service.description }}</p>
-                <button class="cta-button">{{ service.ctaText }}</button>
+                <h2>Workshops</h2>
+                <p>Interaktiva AI-workshops skräddarsydda för företag och skolor.</p>
+                <button class="cta-button">Läs Mer</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-image">
+                <img src="../assets/Lecture.jpg" alt="Föreläsningar">
+            </div>
+            <div class="service-info">
+                <h2>Föreläsningar</h2>
+                <p>Engagerande föreläsningar om AI för att inspirera och informera.</p>
+                <button class="cta-button">Utforska</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-image">
+                <img src="../assets/Combined.jpg" alt="Kombinerade Sessioner">
+            </div>
+            <div class="service-info">
+                <h2>Kombinaton</h2>
+                <p>En mix av workshops och föreläsningar för djupare förståelse.</p>
+                <button class="cta-button">Boka Nu</button>
             </div>
         </div>
     </div>
+
 </template>
 <script>
     export default {
@@ -49,8 +70,8 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom:7rem;
-  margin-top:5rem;
+  margin-bottom: 7rem;
+  margin-top: 5rem;
 }
 
 .service-card {

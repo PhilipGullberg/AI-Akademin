@@ -3,24 +3,24 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-      <nav class="navbar">
-      <div class="nav-left">
-        <!-- Lägg till din logotyp här -->
-        <a href="/" class="logo"><img src="../src/assets/LogoNew.png" alt=""></a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#services">Tjänster</a></li>
-        <li><a href="#tools-methods">Verktyg & Metoder</a></li>
-        <li><a href="#about-us">Om oss</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <!-- Lägg till fler länkar för dina sektioner här -->
-      </ul>
-      <div class="cta-right">
-        <button class="cta-button">Boka nu</button>
-      </div>
-    </nav>
-  
-      
+  <nav class="navbar">
+    <div class="nav-left">
+      <!-- Lägg till din logotyp här -->
+      <router-link to="/AI-Akademin/" class="logo"><img src="../src/assets/LogoNew.png" alt=""></router-link>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Tjänster</a></li>
+      <li><a href="#tools-methods">Verktyg & Metoder</a></li>
+      <li><a href="#about-us">Om oss</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <!-- Lägg till fler länkar för dina sektioner här -->
+    </ul>
+    <div class="cta-right">
+      <button class="cta-button">Boka nu</button>
+    </div>
+  </nav>
+
+
   <RouterView />
 </template>
 
@@ -64,9 +64,10 @@ import { RouterLink, RouterView } from 'vue-router'
 .cta-right {
   flex: 1;
   text-align: right;
-  
+
 }
-.cta-right button{
+
+.cta-right button {
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
@@ -79,8 +80,13 @@ import { RouterLink, RouterView } from 'vue-router'
 .cta-right button:hover {
   background-color: #0056b3;
 }
-.logo img{
-  width:200px;
-}
 
+.logo img {
+  width: 200px;
+}
+@media (max-width: 800px) {
+  .nav-links{
+    display:none;
+  }
+}
 </style>

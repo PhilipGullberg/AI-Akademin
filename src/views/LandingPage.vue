@@ -66,8 +66,9 @@ export default {
 }
 
 .left-section {
-  width: 100%;
+  width: 90%;
   padding: 20px;
+  margin-left: 5rem;
 }
 
 .right-section {
@@ -77,7 +78,7 @@ export default {
 }
 
 img {
-  width: 70%;
+  width: 65%;
   height: auto;
   border-radius: 7px;
 }
@@ -88,7 +89,7 @@ h1 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
 }
 
@@ -109,6 +110,64 @@ p {
 
 .cta-button:hover {
   background-color: #0056b3;
+
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  }
+
+  .right-section {
+    display: none; /* Göm bilden i mobilvy */
+  }
+
+  .left-section {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin:0;
+    width:100%;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+   
+  }
+
+  .left-section::before {
+    content: "";
+    background-image: url('../assets/BannerImage.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px) brightness(50%); /* Lägg till suddighet efter behov */
+    z-index: -1;
+
+  }
+h1{
+    font-size: 2rem;
+}
+  h1,
+  p,
+   .cta-buttons {
+    position: relative;
+    z-index: 1;
+    color: white;
+    
+    justify-content: center; /* Justera färg efter behov */
+  }
+  .cta-buttons button{
+    margin:1.2rem;
+    transform: scale(1.2);
+
+  }
 }
 
 </style>

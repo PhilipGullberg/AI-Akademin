@@ -41,7 +41,7 @@
                         Arbetsuppgifter som AI passar att användas till
                     </li>
                     <li>
-                        Blir proffs på att prompta AI för bästa resultat
+                        Bli proffs på att prompta AI för bästa resultat
                     </li>
                 </ul>
                 <img class="rocketIMG" width="150px" src="../assets/RocketShip.png" alt="">
@@ -201,6 +201,13 @@ ul li a:hover {
 .methods-info {
   background-color: #f7f7f7;
   border-radius: 8px;
+}
+@media (max-width: 800px) {
+  .tools-and-methods{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>
 <script>
