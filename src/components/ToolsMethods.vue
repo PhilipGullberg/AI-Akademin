@@ -7,19 +7,38 @@
         <div class="card-container">
             <div class="card card-3">
                 <h3>Text - ChatGPT</h3>
-                <p>Ett fantastiskt verktyg för att effektivisera era arbetsuppgifter.</p>
+                <ul>
+                  <li>Lär dig avancerade prompts</li>
+                   <li>Från teori till praktik</li>
+                   <li>Effektivisera ditt arbete</li>
+                </ul>
             </div>
             <div class="card card-1">
-                <h3>Bild - Dall-E / Firefly</h3>
-                <p>Lär dig skapa AI-bilder och ge rätt prompts för att få bättre resultat.</p>
+                <h3>Bilder</h3>
+                <ul>
+                    <li>Rätt prompts för rätt syfte</li>
+                    <li>DALL-E, Firefly</li>
+                     <li>Vad kan bilderna användas till</li>
+                    
+                  </ul>
             </div>
             <div class="card card-2">
                 <h3>Ljud - Elevenlabs</h3>
-                <p>Lär dig om hur AI kan användas för att skapa text-till-tal eller ändra röst.</p>
+                 <ul>
+                      <li>Ändra röstens språk</li>
+                      <li>Text-till-tal </li>
+                       <li>Ändra karaktär på röster</li>
+                    
+                    </ul>
             </div>
         <div class="card card-4">
             <h3>Video - Heygen </h3>
-            <p>Lär dig skapa en AI-avatar av dig själv.</p>
+            <ul>
+                        <li>Skapa en AI-avatar</li>
+                        <li>Prata annat språk</li>
+                         <li>Text-till-video</li>
+                    
+                    </ul>
         </div>
         </div>
 
@@ -133,8 +152,8 @@ box-shadow: 1px 1px 3px 3px black;
 }
 .card p {
     position: relative;
-  font-size: 1rem;
-  font-weight: medium;
+ 
+
   line-height: 1.6;
   z-index: 1;
 }
@@ -192,7 +211,6 @@ ul li a:hover {
 
 .tools-info p,
 .methods-info p {
-  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
