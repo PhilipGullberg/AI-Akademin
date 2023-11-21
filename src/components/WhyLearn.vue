@@ -6,7 +6,7 @@
               <img src="https://aiakademin.io/wp-content/uploads/2023/10/AI-6.png" alt="Why Learn AI">
             </div>
             <div class="text-section">
-              <h2>Varför lära sig AI?</h2>
+              <h2>Varför lära sig om AI?</h2>
               <p>Utforska potentialen med artificiell intelligens och dess påverkan på framtiden. Lär dig hur AI kan förändra branscher och samhällen.</p>
             </div>
         </div>
@@ -33,18 +33,22 @@
 
 </template>
 <style scoped>
+
 /* Gemensamma stilar för komponenten */
 .why-learn-ai {
   width: 100%;
-  max-width: 1200px;
+  background-color: #2e91fc;
+  color:White;
   margin: 0 auto;
-  padding: 20px;
+  padding: 80px;
+  
 }
 .card{
     display:Flex;
     align-items: center;
     justify-content: center;
     gap:40px;
+    color:white;
 }
 /* Stilar för text och bild */
 .content {
@@ -63,6 +67,7 @@
 
 .text-section {
   flex: 0.7;
+  color:white;
 }
 
 h2 {
@@ -72,7 +77,15 @@ h2 {
 
 p {
   font-size: 1rem;
-  color: #666;
+  color:rgba(255, 255, 255, 0.95);
+}
+@media (max-width: 800px) {
+  .card{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
 </style>
 <script>

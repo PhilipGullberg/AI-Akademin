@@ -31,7 +31,7 @@
 .avatar img {
   width: 200px;
   height: 250px;
-  border-radius: 100%;
+  border-radius: 8px;
   margin-right: 5rem;
 }
 

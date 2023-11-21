@@ -40,7 +40,6 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
 
 .row{
   width:100%;
-  height:5vh;
   padding:0;
   margin:0;
   display: flex;

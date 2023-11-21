@@ -44,9 +44,7 @@ export default {
   font-size:1.1rem;
   justify-content: center;
   align-items: center;
-  background: rgb(240,247,255);
-background: linear-gradient(166deg, rgb(88, 165, 253) 0%, rgb(46, 145, 250) 38%, rgba(0,123,255,1) 97%, rgb(12, 129, 254) 100%);
-  color:white;
+   color:black;
 }
 .left-section img{
     width:80%;

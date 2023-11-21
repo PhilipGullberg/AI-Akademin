@@ -1,5 +1,9 @@
 <template>
+    <div class="title"><h1>Vad vi erbjuder </h1></div>
+    
     <div id="services" class="services">
+
+        
         <div class="service-card">
             <div class="service-image">
                 <img src="https://www.eschoolnews.com/files/2023/07/arts-education-STEAM.jpeg" alt="Workshops">
@@ -71,7 +75,12 @@
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 7rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+.title{
+    text-align: center;
+    margin-top: 4rem;
+    padding:10px;
 }
 
 .service-card {
