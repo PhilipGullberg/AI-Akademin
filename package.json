@@ -2,10 +2,14 @@
   "name": "aikunskap",
   "version": "0.0.0",
   "private": true,
+  "homepage":"https://{philip.gullberg}.github.io/{AI-Akademin}/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
+
   },
   "dependencies": {
     "@builder.io/react": "^3.1.1",
@@ -16,6 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
+    "gh-pages": "^6.1.0",
     "vite": "^4.4.11"
   }
 }
