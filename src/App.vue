@@ -72,6 +72,7 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: #007bff;
   color: white;
   border: none;
+  box-shadow: 1px 1px 1px 1px #0000005c;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

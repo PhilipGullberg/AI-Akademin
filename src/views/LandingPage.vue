@@ -11,10 +11,12 @@
             </div>
           </div>
           <div class="right-section">
-            <img src="../assets/BannerImage.jpg" alt="Relevant Bild">
+            <img src="../assets/AI-Akademin.jpg" alt="Relevant Bild">
           </div>
         </div>
       </div>
+    <Divider />
+    <WhyLearn />
     <AboutUs />
     <ServicePage />
     <ToolsMethods />
@@ -27,10 +29,11 @@ import AboutUs from '../components/AboutUs.vue';
 import ServicePage from "../components/ServicePage.vue";
 import ToolsMethods from "../components/ToolsMethods.vue"
 import BannerCTA from '../components/BannerCTA.vue';
-
+import WhyLearn from '../components/WhyLearn.vue';
+import Divider from "../components/DividerPage.vue";
 
 export default {
-    components: { AboutUs, ServicePage,ToolsMethods, BannerCTA},
+    components: { AboutUs, ServicePage,ToolsMethods, BannerCTA, WhyLearn,Divider},
     data: () => ({
         canShowContent: false,
         content: null,
@@ -55,6 +58,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8rem;
 }
 
 .content {
@@ -72,7 +76,7 @@ export default {
 }
 
 .right-section {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -105,6 +109,7 @@ p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 1px 1px 1px 1px #0000005c;
   transition: background-color 0.3s ease;
 }
 
@@ -139,7 +144,7 @@ p {
 
   .left-section::before {
     content: "";
-    background-image: url('../assets/BannerImage.jpg');
+    background-image: url('../assets/AI-Akademin.jpg');
     background-size: cover;
     background-position: center;
     position: absolute;

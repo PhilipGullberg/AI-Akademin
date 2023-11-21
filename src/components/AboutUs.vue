@@ -4,7 +4,11 @@
             
           <div class="left-section">
              
-             <img src="../assets/Philip.jpg" alt="Team Photo">
+            
+             <div>
+               <img class="image" src="../assets/LogoNew.png" alt="Team Photo">
+               </div>
+             
             </div>
           <div class="right-section">
             <div>
@@ -45,8 +49,9 @@ background: linear-gradient(166deg, rgb(88, 165, 253) 0%, rgb(46, 145, 250) 38%,
   color:white;
 }
 .left-section img{
-    width:50%;
+    width:80%;
     border-radius: 8px;
+    align-self: start;
 }
 .content {
   display: grid;
@@ -54,7 +59,10 @@ background: linear-gradient(166deg, rgb(88, 165, 253) 0%, rgb(46, 145, 250) 38%,
   gap: 30px;
   max-width: 1200px;
 }
-
+.image{
+  
+  background-color: white;
+}
 .left-section {
   display: flex;
   flex-direction: column;
@@ -71,6 +79,10 @@ background: linear-gradient(166deg, rgb(88, 165, 253) 0%, rgb(46, 145, 250) 38%,
 }
 .right-section p{
   margin-top: 1rem;
+}
+
+img.imageProfile {
+  width:50%;
 }
 @media (max-width: 800px) {
   .about-us-page{

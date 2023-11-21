@@ -7,7 +7,7 @@
         <div class="card-container">
             <div class="card card-3">
                 <h3>Text - ChatGPT</h3>
-                <p>Ett fantastiskt verktyg som kan effektivisera många arbetsuppgifter.</p>
+                <p>Ett fantastiskt verktyg för att effektivisera era arbetsuppgifter.</p>
             </div>
             <div class="card card-1">
                 <h3>Bild - Dall-E / Firefly</h3>
