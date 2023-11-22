@@ -23,8 +23,6 @@
     <BannerCTA />
 </template>
 <script>
-
-// OR use this one if you are on Vue 3
 import AboutUs from '../components/AboutUs.vue';
 import ServicePage from "../components/ServicePage.vue";
 import ToolsMethods from "../components/ToolsMethods.vue"
@@ -34,23 +32,6 @@ import Divider from "../components/DividerPage.vue";
 
 export default {
     components: { AboutUs, ServicePage,ToolsMethods, BannerCTA, WhyLearn,Divider},
-    data: () => ({
-        canShowContent: false,
-        content: null,
-        apiKey: '67d956f840924bacbfde9ef3cf161bde',
-    }),
-    mounted() {
-        getContent({
-            model: 'landing-page',
-            apiKey: '67d956f840924bacbfde9ef3cf161bde',
-            userAttributes: {
-                urlPath: window.location.pathname,
-            },
-        }).then(res => {
-            this.content = res;
-            this.canShowContent = this.content || isPreviewing();
-        });
-    },
 }
 </script>
 <style scoped>

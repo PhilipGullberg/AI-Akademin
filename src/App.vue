@@ -9,10 +9,9 @@ import { RouterLink, RouterView } from 'vue-router'
       <router-link to="/AI-Akademin/" class="logo"><img src="../src/assets/LogoNew.png" alt=""></router-link>
     </div>
     <ul class="nav-links">
-      <li><a href="#services">Tjänster</a></li>
-      <li><a href="#tools-methods">Verktyg & Metoder</a></li>
-      <li><a href="#about-us">Om oss</a></li>
-      <li><a href="#contact">Kontakt</a></li>
+      <router-link to="/AI-Akademin/" class="nav-links">Hem</router-link>
+      <router-link to="/services/" class="nav-links">Våra tjänster</router-link>
+      
       <!-- Lägg till fler länkar för dina sektioner här -->
     </ul>
     <div class="cta-right">
@@ -46,18 +45,18 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: center;
 }
 
-.nav-links li {
+.nav-links{
   margin: 0 10px;
 }
 
-.nav-links li a {
+.nav-links{
   color: black;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-links:hover {
   color: #007bff;
 }
 

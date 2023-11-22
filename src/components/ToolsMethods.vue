@@ -143,7 +143,7 @@
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(10px) brightness(80%); /* Justera suddighetsgraden efter behov */
+  filter: blur(15px) brightness(80%); /* Justera suddighetsgraden efter behov */
 box-shadow: 1px 1px 3px 3px black;
 }
 .card h3{

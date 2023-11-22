@@ -11,7 +11,7 @@
             <div class="service-info">
                 <h2>Workshops</h2>
                 <p>Interaktiva AI-workshops skräddarsydda för företag och skolor.</p>
-                <button class="cta-button">Läs Mer</button>
+                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Läs Mer</button></router-link>
             </div>
         </div>
         <div class="service-card">
@@ -21,7 +21,7 @@
             <div class="service-info">
                 <h2>Föreläsningar</h2>
                 <p>Engagerande föreläsningar om AI för att inspirera och informera.</p>
-                <button class="cta-button">Utforska</button>
+                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Utforska</button></router-link>
             </div>
         </div>
         <div class="service-card">
@@ -31,13 +31,14 @@
             <div class="service-info">
                 <h2>Kombinaton</h2>
                 <p>En mix av workshops och föreläsningar för djupare förståelse.</p>
-                <button class="cta-button">Boka Nu</button>
+                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Boka Nu</button></router-link>
             </div>
         </div>
     </div>
 
 </template>
 <script>
+import { RouterLink } from 'vue-router'
     export default {
         name: 'Services',
     data() {

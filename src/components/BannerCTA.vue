@@ -52,7 +52,7 @@ h2 {
   padding: 15px 30px;
   background-color: #007bff;
   color: #fff;
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
   border: 1px black solid;
   border-radius: 5px;
   cursor: pointer;
