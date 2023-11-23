@@ -6,7 +6,7 @@
               <img src="https://aiakademin.io/wp-content/uploads/2023/10/AI-6.png" alt="Why Learn AI">
             </div>
             <div class="text-section">
-              <h2>Varför lära sig om giAI?</h2>
+              <h2>Varför lära sig om AI?</h2>
               <p>Utforska potentialen med artificiell intelligens och dess påverkan på framtiden. Lär dig hur AI kan förändra branscher och samhällen.</p>
             </div>
         </div>
@@ -37,7 +37,7 @@
 /* Gemensamma stilar för komponenten */
 .why-learn-ai {
   width: 100%;
-  background-color: #2e91fc;
+  background-color: #515338;
   color:White;
   margin: 0 auto;
   padding: 80px;

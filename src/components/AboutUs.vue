@@ -7,9 +7,14 @@
             
              <div>
                <img class="image" src="../assets/LogoNew.png" alt="Team Photo">
+  
+               <br>
+               <br>
+               <button class="cta-button">Kontakta oss</button>
                </div>
-             
+               
             </div>
+            
           <div class="right-section">
             <div>
                 <h1>Om oss</h1>
@@ -45,11 +50,35 @@ export default {
   justify-content: center;
   align-items: center;
    color:black;
+   margin-bottom: 4rem;
+}
+
+.cta-button {
+  padding: 10px 15px;
+  width:50%;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.461);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
 }
 .left-section img{
     width:80%;
     border-radius: 8px;
-    align-self: start;
+
+}
+.left-section div{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .content {
   display: grid;

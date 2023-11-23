@@ -17,6 +17,7 @@
   width: 100%;
   padding: 50px 0;
   text-align: center;
+  background-color: #515338;
   color: #fff;
 }
 
@@ -87,7 +88,7 @@ export default {
     props: {
         bgColor: {
             type: String,
-            default: '#007bff'
+            default: '#515338;'
         },
         avatarImg: {
             type: String,

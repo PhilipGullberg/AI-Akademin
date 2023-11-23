@@ -1,4 +1,7 @@
 <template>
+    <div class="background">
+
+   
     <div class="title"><h1>Vad vi erbjuder </h1></div>
     
     <div id="services" class="services">
@@ -35,7 +38,7 @@
             </div>
         </div>
     </div>
-
+</div>
 </template>
 <script>
 import { RouterLink } from 'vue-router'
@@ -68,10 +71,18 @@ import { RouterLink } from 'vue-router'
 };
 </script>
 <style scoped>
+.background{
+    background-color: #515338;
+    padding:0.5rem;
+    margin-bottom:3rem;
+    
+}
+
 .services {
   display: flex;
   justify-content: center;
   gap: 50px;
+ 
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -82,6 +93,7 @@ import { RouterLink } from 'vue-router'
     text-align: center;
     margin-top: 4rem;
     padding:10px;
+    color:white;
 }
 
 .service-card {

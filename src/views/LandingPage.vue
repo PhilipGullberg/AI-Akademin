@@ -11,13 +11,14 @@
             </div>
           </div>
           <div class="right-section">
-            <img src="../assets/AI-Akademin.jpg" alt="Relevant Bild">
+            <img src="../assets/AI-Akademin.png" alt="Relevant Bild">
           </div>
         </div>
       </div>
     <Divider />
     <WhyLearn />
     <AboutUs />
+    <Divider />
     <ServicePage />
     <ToolsMethods />
     <BannerCTA />
@@ -58,12 +59,14 @@ export default {
 
 .right-section {
   width: 90%;
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 img {
-  width: 65%;
+  width: 80%;
   height: auto;
   border-radius: 7px;
 }
@@ -125,15 +128,16 @@ p {
 
   .left-section::before {
     content: "";
-    background-image: url('../assets/AI-Akademin.jpg');
+    background-image: url('../assets/AI-Akademin.png');
     background-size: cover;
     background-position: center;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
     bottom: 0;
-    filter: blur(5px) brightness(50%); /* Lägg till suddighet efter behov */
+    filter: blur(5px) brightness(25%); /* Lägg till suddighet efter behov */
     z-index: -1;
 
   }
