@@ -400,17 +400,17 @@ ul li::before {
     display: flex;
     
     padding:1rem;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-   padding-left: 20rem;
-   padding-right: 10rem;
+
     /* Stilar för sektionens layout */
 }
 
 
 .section-info {
-    flex: 1;
+
     padding-right: 5rem;
+    width:45%;
     
     /* Justera mellanrummet mellan text och bild */
     /* Stilar för sektionens text */

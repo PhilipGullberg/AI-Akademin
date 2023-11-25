@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <!-- Lägg till fler länkar för dina sektioner här -->
     </ul>
     <div class="cta-right">
-      <router-link to="/contact/" class="nav-links"> <button class="cta-button">Boka nu</button></router-link>
+      <router-link to="/contact/" > <button class="cta-button">Boka nu</button></router-link>
     </div>
   </nav>
 
@@ -54,6 +54,7 @@ import { RouterLink, RouterView } from 'vue-router'
   list-style: none;
   padding: 0;
   margin: 0;
+  gap:6px;
   display: flex;
   justify-content: center;
 }
@@ -98,6 +99,7 @@ import { RouterLink, RouterView } from 'vue-router'
 .cta-right {
   flex: 1;
   text-align: right;
+  justify-content: end;
   animation:fadeInAnimation 0.5s ease-in;
 
 }

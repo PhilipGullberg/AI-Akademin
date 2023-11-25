@@ -8,6 +8,7 @@ const router = createRouter({
       document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
   },
   history: createWebHistory(import.meta.env.BASE_URL),
+ 
   routes: [
     {
       path: '/AI-Akademin/',
