@@ -29,7 +29,7 @@ import { RouterLink, RouterView } from 'vue-router'
 @keyframes fadeUpAnim{
     0% {
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateY(-100px);
         
     }
     100% {
@@ -38,7 +38,7 @@ import { RouterLink, RouterView } from 'vue-router'
      }
 }
 .navbar {
-  animation: fadeUpAnim 0.4s ease-out;
+  animation: fadeUpAnim 0.6s ease-out;
   background-color: #ffffff;
   color: #ffffff;
   padding: 5px 40px;
