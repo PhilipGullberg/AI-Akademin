@@ -36,8 +36,21 @@ export default {
 }
 </script>
 <style scoped>
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
 .landing-page {
   display: flex;
+  animation: fadeInAnimation 0.4s ease-out;
   justify-content: center;
   align-items: center;
   margin-bottom: 8rem;

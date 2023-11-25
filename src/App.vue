@@ -26,7 +26,19 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+@keyframes fadeUpAnim{
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
 .navbar {
+  animation: fadeUpAnim 0.4s ease-out;
   background-color: #ffffff;
   color: #ffffff;
   padding: 5px 40px;
@@ -34,17 +46,7 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: space-around;
   align-items: center;
 }
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        transform: translate(0,-100);
-        
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0,0);
-     }
-}
+
 
 .nav-left {
   flex: 1;
@@ -100,8 +102,7 @@ import { RouterLink, RouterView } from 'vue-router'
   flex: 1;
   text-align: right;
   justify-content: end;
-  animation:fadeInAnimation 0.5s ease-in;
-
+  
 }
 
 .cta-right button {
