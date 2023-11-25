@@ -24,7 +24,7 @@
             <div class="service-info">
                 <h2>Föreläsningar</h2>
                 <p>Engagerande föreläsningar om AI för att inspirera och informera.</p>
-                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Utforska</button></router-link>
+                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Läs mer</button></router-link>
             </div>
         </div>
         <div class="service-card">
@@ -34,7 +34,7 @@
             <div class="service-info">
                 <h2>Kombinaton</h2>
                 <p>En mix av workshops och föreläsningar för djupare förståelse.</p>
-                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Boka Nu</button></router-link>
+                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Läs mer</button></router-link>
             </div>
         </div>
     </div>
@@ -132,7 +132,7 @@ p {
 
 .cta-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color:#B8AD8B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -141,7 +141,7 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #8D8362;
 }
 
 </style>

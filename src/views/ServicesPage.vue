@@ -39,7 +39,7 @@
                     Få en detaljerad förståelse för AI:ens olika områden och verktyg.
                     Jobba praktiskt med verktygen och lär dig använda AI till din fördel i arbetslivet.
                 </p>
-                <button class="cta-button" id="white">Boka nu</button>
+                <router-link to="/contact/" class="nav-links"><button class="cta-button" id="white">Boka nu</button></router-link>
             </div>
             <div class="section-image">
                 <img src="../assets/WorkshopAI.jpeg" alt="Workshop Image">
@@ -123,7 +123,7 @@
                     <p>
                        Få en rejäl introduktion och inspiration om AI, förstå vad hypen är och vad en AI faktiskt är för något. Välj mellan en kortare version eller en längre version, vi anpassar alla föreläsningar efter tidigare förkunskaper och teknisk bakgrund. Vi hjälper er förstå AI:s påverkan på samhället, hur olika AI fungerar och ger en inblick i framtiden med AI. Vi diskuterar fördelar och nackdelar. Se till att hänga med i utvecklingen.
                     </p>
-                    <button class="cta-button">Boka nu</button>
+                    <router-link to="/contact/" class="nav-links"><button class="cta-button">Boka nu</button></router-link>
                 </div>
                 <div class="section-image">
                     <img src="../assets/Lecture.jpg" alt="Workshop Image">
@@ -209,7 +209,7 @@
                     <p>
                         Den perfekta blandningen mellan teori och praktik. Bli inspirerade och förstå hur AI fungerar och gå sedan över och testa på själva. Vi anpassar innehållet till er organisation och bygger tillsammans fram idéer praktiska användningsområden att använda AI. Börja effektivisera ert arbete med AI nu!
                     </p>
-                    <button class="cta-button" id="white">Boka nu</button>
+                    <router-link to="/contact/" class="nav-links">  <button class="cta-button" id="white">Boka nu</button></router-link>
                 </div>
                 <div class="section-image">
                     <img src="../assets/Combined.jpg" alt="Workshop Image">
@@ -273,11 +273,11 @@ export default {
 
 <style scoped>
 #bigHalfCircle path {
-	fill: blue;
-	stroke: darken(blue, 7%);
+	fill: #515338;
+	stroke: darken(#515338, 7%);
 }
 .background{
-    background-color: #007bff;
+    background-color: #515338;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +287,7 @@ export default {
 .icon-text{
     display:flex;
     align-items: center;
-    gap:5px;
+    gap:12px;
     margin-bottom:1rem;
 }
 .background .section{
@@ -309,11 +309,11 @@ export default {
 }
 /* Stil för den övergripande layouten */
 #clouds path {
-	fill: #007bff;
-	stroke: #007bff;
+	fill: #515338;
+	stroke: #515338;
 }
 .clouds {
-  background: #007bff;
+  background: #515338;
 }
 #clouds2 path{
     fill:white;
@@ -327,7 +327,7 @@ export default {
   padding: 10px;
   font-size:16px;
   
-  background-color: #007bff;
+  background-color: #B8AD8B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -341,7 +341,11 @@ export default {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #888B61;
+}
+.cta-button#white:hover {
+background-color: rgba(229, 229, 155, 0.714);
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.378);
 }
 .solid{
     border:1px solid black;
@@ -413,7 +417,7 @@ ul li::before {
 }
 
 .section-image img {
-    width: 300px;
+    width: 400px;
     /* Justera bildens storlek */
     height: auto;
     border-radius: 10px;
@@ -465,6 +469,9 @@ ul li::before {
   .section-image img {
     width: 50%; /* Full bredd för bilder på mindre skärmar */
     border-radius: 10px;
+}
+.section-info h1{
+    font-weight: bold;
 }
 
   .cards {

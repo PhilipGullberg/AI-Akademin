@@ -6,16 +6,17 @@ import { RouterLink, RouterView } from 'vue-router'
   <nav class="navbar">
     <div class="nav-left">
       <!-- Lägg till din logotyp här -->
-      <router-link to="/AI-Akademin/" class="logo"><img src="../src/assets/LogoNew.png" alt=""></router-link>
+      <router-link to="/AI-Akademin/" class="logo"><img src="../src/assets/AILogga.png" alt=""></router-link>
     </div>
     <ul class="nav-links">
       <router-link to="/AI-Akademin/" class="nav-links">Hem</router-link>
       <router-link to="/services/" class="nav-links">Våra tjänster</router-link>
+      <router-link to="/contact/" class="nav-links">Kontakt</router-link>
       
       <!-- Lägg till fler länkar för dina sektioner här -->
     </ul>
     <div class="cta-right">
-      <button class="cta-button">Boka nu</button>
+      <router-link to="/contact/" class="nav-links"> <button class="cta-button">Boka nu</button></router-link>
     </div>
   </nav>
 
@@ -31,6 +32,17 @@ import { RouterLink, RouterView } from 'vue-router'
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0,-100);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+     }
 }
 
 .nav-left {
@@ -52,23 +64,46 @@ import { RouterLink, RouterView } from 'vue-router'
 .nav-links{
   color: black;
   text-decoration: none;
+  position: relative;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .nav-links:hover {
-  color: #007bff;
+  color: #52533a;
+  
+}
+.nav-links a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background: transparent;
+}
+
+.nav-links a:after {
+  transition: width .25s ease, background-color .25s ease, left .25s ease;
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #888B61;
 }
 
 .cta-right {
   flex: 1;
   text-align: right;
+  animation:fadeInAnimation 0.5s ease-in;
 
 }
 
 .cta-right button {
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 8px 12px;
+  background-color: #B8AD8B;
   color: white;
   border: none;
   box-shadow: 1px 1px 1px 1px #0000005c;
@@ -78,11 +113,11 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .cta-right button:hover {
-  background-color: #0056b3;
+  background-color: #8D8362;
 }
 
 .logo img {
-  width: 200px;
+  width: 100px;
 }
 @media (max-width: 800px) {
   .nav-links{

@@ -6,7 +6,7 @@
             <h1>Lär dig AI: Interaktivt & Engagerande</h1>
             <p>Upptäck potentialen med AI genom våra interaktiva workshops och föreläsningar. Skräddarsydda för företag och skolor, oavsett kunskapsnivå.</p>
             <div class="cta-buttons">
-              <button class="cta-button">Boka nu</button>
+              <router-link to="/contact/" class="nav-links"><button class="cta-button">Boka nu</button></router-link>
               <button class="cta-button">Intro-video (30s)</button>
             </div>
           </div>
@@ -62,6 +62,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -88,7 +89,7 @@ p {
 
 .cta-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #B8AD8B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -98,7 +99,7 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #8D8362;
 
 }
 @media only screen and (max-width: 768px) {

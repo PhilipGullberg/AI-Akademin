@@ -7,7 +7,7 @@
             <div class="text">
                 <h2>{{ title }}</h2>
                 <p>Vi tar gärna emot förfrågningar och tankar ni har, så tveka inte att höra av er</p>
-                <a href="mailto:philip_gullberg@hotmail.com"><button class="cta-button">{{ ctaText }}</button></a>
+                <router-link to="/contact/" class="nav-links"><button class="cta-button">Kontakta oss</button></router-link>
             </div>
         </div>
     </div>
@@ -45,13 +45,13 @@
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .cta-button {
   padding: 15px 30px;
-  background-color: #007bff;
+  background-color: #8D8362;
   color: #fff;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
   border: 1px black solid;
@@ -66,7 +66,7 @@ h2 {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #888B61;
 }
 @media (max-width: 800px) {
   h2{

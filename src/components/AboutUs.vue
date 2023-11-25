@@ -6,11 +6,11 @@
              
             
              <div>
-               <img class="image" src="../assets/LogoNew.png" alt="Team Photo">
+               <img class="image" src="../assets/AILogga.png" alt="Team Photo">
   
                <br>
                <br>
-               <button class="cta-button">Kontakta oss</button>
+               <router-link to="/contact/" class="nav-links"><button class="cta-button">Kontakta oss</button></router-link>
                </div>
                
             </div>
@@ -55,9 +55,8 @@ export default {
 
 .cta-button {
   padding: 10px 15px;
-  width:50%;
   font-size: 1.1rem;
-  background-color: #007bff;
+  background-color: #B8AD8B;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.461);
   color: white;
   border: none;
@@ -67,7 +66,7 @@ export default {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #8D8362;
 }
 .left-section img{
     width:80%;

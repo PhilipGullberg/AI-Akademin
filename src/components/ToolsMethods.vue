@@ -186,12 +186,12 @@ ul li::before {
 /* Styla länkar inuti listan */
 ul li a {
   text-decoration: none;
-  color: #007bff; /* Färg på länkarna */
+  color: #515338; /* Färg på länkarna */
   transition: color 0.3s ease; /* Gör övergången av färg mjuk */
 }
 
 ul li a:hover {
-  color: #0056b3; /* Färg vid hover */
+  color: #888B61; /* Färg vid hover */
 }
 
 .tools-info,
