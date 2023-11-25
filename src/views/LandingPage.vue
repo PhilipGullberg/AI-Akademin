@@ -47,7 +47,7 @@ export default {
   display: flex;
   align-items: center;
   max-width: 1200px;
-  margin-top:3rem;
+  margin-top:1rem;
   width: 100%;
 }
 

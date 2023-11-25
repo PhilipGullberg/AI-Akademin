@@ -2,19 +2,19 @@
   "name": "aikunskap",
   "version": "0.0.0",
   "private": true,
-  "homepage":"https://philip.gullberg.github.io/AI-Akademin/",
+  "homepage": "https://philip.gullberg.github.io/AI-Akademin/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@builder.io/react": "^3.1.1",
     "@builder.io/sdk-vue": "^0.7.0",
     "@builder.io/vue": "^0.1.12",
+    "googleapis": "^128.0.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },

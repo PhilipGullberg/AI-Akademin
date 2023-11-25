@@ -2,10 +2,17 @@
     <div class="contact-page">
       <div class="contact-form">
         <h2>Kontakta oss</h2>
+        <p>Skicka gärna en förfrågan om ni vill boka en föreläsning eller workshop, eller bara ställa en fråga om våra tjänster.
+            <br>Föreslå gärna en tid som passar er, så återkommer vi om tiden passar.
+        </p>
         <form @submit.prevent="submitForm">
           <div class="form-group">
             <label for="name">Namn:</label>
             <input type="text" id="name" v-model="formData.name" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Email:</label>
+            <input type="email" id="email" v-model="formData.email" required>
           </div>
           <div class="form-group">
             <label for="organization">Organisation:</label>
@@ -25,7 +32,7 @@
           </div>
           <div class="form-group">
             <label for="freetext">Meddelande:</label>
-            <textarea cols="50" rows="5" id="organization" v-model="formData.meddelande"></textarea>
+            <textarea cols="50" rows="5" id="organization" v-model="formData.message"></textarea>
           </div>
           <button type="submit">Skicka</button>
         </form>
@@ -34,23 +41,49 @@
   </template>
   
   <script>
+
   export default {
+   
     data() {
       return {
         formData: {
           name: '',
+          email:'',
           organization: '',
           service: 'Föreläsning',
-          date: ''
+          date: '',
         }
       };
     },
     methods: {
-      submitForm() {
-        // Implementera logiken för att skicka e-postmeddelande från backend
-      }
-    }
-  };
+        submitForm() {
+        // Hantera formulärdata här
+
+            this.sendEmail(this.formData);
+        },
+
+        
+
+        sendEmail(formData) {
+            
+            const emailContent = `
+                Från: ${formData.name}
+                Mail: ${formData.email} 
+                Meddelande: ${formData.message} 
+                organization: ${formData.organization} 
+                service: ${formData.service} 
+                Date: ${formData.date} 
+            `;
+
+            const emailLines = emailContent.split('\n');
+            const message = emailLines.join('<br>');
+            console.log(emailLines)
+        }
+    },
+            
+        
+    
+};
   </script>
   
   <style scoped>
@@ -58,7 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
     background: linear-gradient(to bottom right, #515338, #82855a);
   }
   textarea {
@@ -69,11 +102,18 @@
     width: 100%;
 }
   .contact-form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 50%;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  }
+  .contact-form p{
+    margin: 1rem 4rem;
+    text-align: center;
+    
   }
   
   h2 {
@@ -91,6 +131,7 @@
   }
   
   input[type="text"],
+  input[type="email"],
   select,
   input[type="date"],
   button {
@@ -111,6 +152,17 @@
   
   button:hover {
     background-color: #726a4f;
+  }
+  @media only screen and (max-width: 768px) {
+    .contact-form {
+        width: 95%;
+
+        
+        
+    }
+    .contact-form p{
+        display:none;
+    }
   }
   </style>
   
