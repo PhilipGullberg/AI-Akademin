@@ -1,11 +1,12 @@
 <template>
     <div class="contact-page">
-      <div class="contact-form">
-        <h2>Kontakta oss</h2>
+      <div  class="contact-form">
+        
+        <form  v-if="!submitted" @submit.prevent="submitForm">
+          <h2>Kontakta oss</h2>
         <p>Skicka gärna en förfrågan om ni vill boka en föreläsning eller workshop, eller bara ställa en fråga om våra tjänster.
             <br>Föreslå gärna en tid som passar er, så återkommer vi om tiden passar.
         </p>
-        <form @submit.prevent="submitForm">
           <div class="form-group">
             <label for="name">Namn:</label>
             <input type="text" id="name" v-model="formData.name" required>
@@ -36,7 +37,13 @@
           </div>
           <button type="submit">Skicka</button>
         </form>
+        <div v-else class="thank-you-message">
+          <h2>Tack för din förfrågan!</h2>
+          <p>Vi har mottagit din information och återkommer snart.</p>
+          <button class="cta-button" @click="reloadPage">Skicka en till förfrågan</button>
       </div>
+      </div>
+      
     </div>
   </template>
   
@@ -46,40 +53,58 @@
    
     data() {
       return {
+        submitted:false,
         formData: {
+          
           name: '',
           email:'',
           organization: '',
           service: 'Föreläsning',
           date: '',
+          endpoint: 'https://formspree.io/f/mgejjond'
         }
       };
     },
     methods: {
-        submitForm() {
-        // Hantera formulärdata här
+      reloadPage() {
+      console.log("hello");
+        window.location.reload();
+      },
+      async submitForm(event) {
+        event.preventDefault();
+        const emailContent = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: this.formData.name,
+            _replyto: this.formData.email,
+            organization: this.formData.organization,
+            service: this.formData.service,
+            date: this.formData.date,
+            message:this.formData.message,
+            // Add other fields as needed
+          })
+        };
 
-            this.sendEmail(this.formData);
-        },
-
-        
-
-        sendEmail(formData) {
-            
-            const emailContent = `
-                Från: ${formData.name}
-                Mail: ${formData.email} 
-                Meddelande: ${formData.message} 
-                organization: ${formData.organization} 
-                service: ${formData.service} 
-                Date: ${formData.date} 
-            `;
-
-            const emailLines = emailContent.split('\n');
-            const message = emailLines.join('<br>');
-            console.log(emailLines)
+        try {
+          const response = await fetch(this.formData.endpoint, emailContent);
+          if (response.ok) {
+            const mail = await response.json();
+            this.submitted = true;
+          } else {
+            throw new Error('Failed to send email');
+          }
+        } catch (error) {
+          console.error('Error:', error);
         }
+        this.submitted=true;
+      }
+      
+        
     },
+    
             
         
     
@@ -100,7 +125,7 @@
 }
 .contact-page {
     display: flex;
-    
+    min-height:50vh;
     justify-content: center;
     align-items: center;
     
