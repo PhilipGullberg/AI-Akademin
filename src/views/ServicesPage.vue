@@ -272,12 +272,24 @@ export default {
 </script>
 
 <style scoped>
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
 #bigHalfCircle path {
 	fill: #515338;
 	stroke: darken(#515338, 7%);
 }
 .background{
     background-color: #515338;
+    
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -358,7 +370,7 @@ background-color: rgba(229, 229, 155, 0.714);
     padding:0% 20rem 0% 20rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
-    
+    animation: fadeInAnimation 0.4s ease-out;    
     line-height: 2;
 }
 .intro p{
@@ -367,6 +379,7 @@ background-color: rgba(229, 229, 155, 0.714);
 .services-page {
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     
@@ -453,6 +466,7 @@ ul li::before {
     padding: 0; /* Tar bort paddings för att optimera för mindre skärmar */
   }
   .intro{
+    animation: fadeInAnimation 0.4s ease-out;
     margin-top: 1rem;
     padding:2rem;
   }

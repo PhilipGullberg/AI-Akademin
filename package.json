@@ -2,13 +2,13 @@
   "name": "aikunskap",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://ai-akademin.vercel.app/",
+  "homepage": "https://philipgullberg.github.io/AI-Akademin/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=./",
+    "build": "vite build ",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "copy index.html 404.html && gh-pages -d dist "
+    "deploy": "cd dist && copy index.html 404.html && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "@builder.io/react": "^3.1.1",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
     "gh-pages": "^6.1.0",
-    "vite": "^4.4.11",
-    "vite-plugin-rewrite-all": "^1.0.2"
+    "vite": "^4.4.11"
+
   }
 }

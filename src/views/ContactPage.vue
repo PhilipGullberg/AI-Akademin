@@ -87,8 +87,20 @@
   </script>
   
   <style scoped>
-  .contact-page {
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+.contact-page {
     display: flex;
+    
     justify-content: center;
     align-items: center;
     
@@ -102,6 +114,7 @@
     width: 100%;
 }
   .contact-form {
+    animation: fadeInAnimation 0.4s ease-out;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 50%;

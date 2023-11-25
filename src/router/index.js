@@ -18,22 +18,17 @@ const router = createRouter({
     },
     {
       path: '/services/',
+      alias: "/AI-Akademin/services/",
       name: 'services',
       component: ServicesPage
       
     },
     {
       path: '/contact/',
-      name: 'contact',
+      name: '/AI-Akademin/contact',
       component: ContactPage
       
     },
-    {
-      path: '/index.html',
-
-
-      component: LandingPage
-    }
    
   ]
 })
