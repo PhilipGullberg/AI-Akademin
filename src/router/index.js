@@ -27,6 +27,12 @@ const router = createRouter({
       name: 'contact',
       component: ContactPage
       
+    },
+    {
+      path: '/index.html',
+
+
+      component: LandingPage
     }
    
   ]
