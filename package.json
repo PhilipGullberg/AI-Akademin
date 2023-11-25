@@ -2,7 +2,8 @@
   "name": "aikunskap",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://philip.gullberg.github.io/AI-Akademin/",
+
+  "homepage": "https://ai-akademin.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
