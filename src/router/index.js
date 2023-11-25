@@ -12,7 +12,7 @@ const router = createRouter({
   routes: [
     {
       path: '/AI-Akademin/',
-      alias: "",
+      alias: "/",
       name: 'home',
       component: LandingPage
     },
