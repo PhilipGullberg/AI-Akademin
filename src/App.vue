@@ -7,10 +7,10 @@ import { RouterLink, RouterView } from 'vue-router'
   <nav class="navbar">
     <div class="nav-left">
       <!-- Lägg till din logotyp här -->
-      <router-link to="/AI-Akademin/" class="logo"><img src="../src/assets/AILogga.png" alt=""></router-link>
+      <router-link to="/" class="logo"><img src="../src/assets/AILogga.png" alt=""></router-link>
     </div>
     <ul class="nav-links">
-      <router-link to="/AI-Akademin/" class="nav-links">Hem</router-link>
+      <router-link to="/" class="nav-links">Hem</router-link>
       <router-link to="/services/" class="nav-links">Våra tjänster</router-link>
       <router-link to="/contact/" class="nav-links">Kontakt</router-link>
       
