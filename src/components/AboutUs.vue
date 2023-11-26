@@ -7,9 +7,7 @@
             
              <div>
                <img class="image" src="../assets/AILogga.png" alt="Team Photo">
-  
-               <br>
-               <br>
+
                <CustomButton route="/contact/" buttonText="Kontakta oss"/>
                </div>
                
@@ -79,6 +77,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap:10px;
 }
 .content {
   display: grid;
@@ -118,7 +117,9 @@ img.imageProfile {
     align-items: center;
   }
   .left-section{
-    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left:0rem;
   }
   .content{
     grid-template-columns: 1fr;

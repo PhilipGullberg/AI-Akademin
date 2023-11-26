@@ -1,5 +1,6 @@
 
 <template>
+  <Navbar />
     <div class="landing-page">
         <div class="content">
           <div class="left-section">
@@ -7,7 +8,6 @@
             <p>Upptäck potentialen med AI genom våra interaktiva workshops och föreläsningar. Skräddarsydda för företag och skolor, oavsett kunskapsnivå.</p>
             <div class="cta-buttons">
               <CustomButton route="/contact/" buttonText="Boka nu"/>
-              
               <button class="cta-button">Intro-video (30s)</button>
             </div>
           </div>
@@ -70,6 +70,10 @@ export default {
   width: 90%;
   padding: 20px;
   margin-left: 5rem;
+  
+}
+.left-section p{
+  line-height:2;
 }
 
 .right-section {
@@ -100,6 +104,7 @@ p {
 .cta-buttons {
   display: flex;
   gap: 10px;
+  align-items: center;
   
 }
 
@@ -125,11 +130,20 @@ p {
     width: 100%;
     align-items: center;
     justify-content: center;
-    
-    
-    
-  }
 
+  
+  }
+  .cta-button{
+    margin:1.2rem;
+    background-color: white;
+
+
+  }
+  .cta-button:hover {
+  background-color: #B8AD8B;
+  color:White;
+
+}
   .right-section {
     display: none; /* Göm bilden i mobilvy */
   }
@@ -172,11 +186,7 @@ h1{
     
     justify-content: center; /* Justera färg efter behov */
   }
-  .cta-buttons button{
-    margin:1.2rem;
-    transform: scale(1.2);
-
-  }
+ 
 }
 
 </style>

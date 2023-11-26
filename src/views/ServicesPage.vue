@@ -1,4 +1,5 @@
 <template>
+    <Navbar />
     <div class="services-page">
         <!-- Första delen -->
         <div class="intro">
@@ -336,9 +337,10 @@ export default {
 }
 
 
+
 .cta-button {
-    margin-top: 2rem;
-  width:30%;
+    margin-top:2rem;
+    width:40%;
   padding: 10px 20px;
   background-color: transparent;
   color:  rgb(0, 0, 0);
@@ -346,8 +348,14 @@ export default {
   font-size:0.9rem;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 1px 1px 2px 2px #0000005c;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
   transition: background-color 0.3s   ease;
+}
+
+.cta-button:hover {
+  background-color: #B8AD8B;
+  color:White;
+
 }
 
 
@@ -356,14 +364,10 @@ export default {
     color:black;
 }
 
-.cta-button:hover {
-  background-color: #B8AD8B;
-  color:White;
 
-}
 .cta-button#white:hover {
-background-color: rgba(229, 229, 155, 0.714);
-  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.378);
+    background-color: #B8AD8B;
+  color:White;
 }
 .solid{
     border:1px solid black;

@@ -39,4 +39,18 @@ export default {
   color:White;
 
 }
+
+@media only screen and (max-width: 768px) {
+  .cta-button{
+    margin:1.2rem;
+    background-color: white;
+
+
+  }
+  .cta-button:hover {
+  background-color: #B8AD8B;
+  color:White;
+
+}
+}
 </style>
