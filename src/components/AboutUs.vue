@@ -10,7 +10,7 @@
   
                <br>
                <br>
-               <router-link to="/contact/" class="nav-links"><button class="cta-button">Kontakta oss</button></router-link>
+               <CustomButton route="/contact/" buttonText="Kontakta oss"/>
                </div>
                
             </div>
@@ -36,9 +36,10 @@
 </template>
 
 <script>
-
+import CustomButton from '../components/CTA-button.vue';
 export default {
-    name: 'AboutUsPage'
+    name: 'AboutUsPage',
+    components:{CustomButton},
 };
 </script>
 <style scoped>

@@ -67,7 +67,7 @@
     },
     methods: {
       reloadPage() {
-      console.log("hello");
+        console.log("hello");
         window.location.reload();
       },
       async submitForm(event) {

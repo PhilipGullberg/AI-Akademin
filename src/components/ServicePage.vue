@@ -14,7 +14,8 @@
             <div class="service-info">
                 <h2>Workshops</h2>
                 <p>Interaktiva AI-workshops skräddarsydda för företag och skolor.</p>
-                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Läs Mer</button></router-link>
+                <CustomButton route="/services/" buttonText="Läs mer"/>
+
             </div>
         </div>
         <div class="service-card">
@@ -24,7 +25,7 @@
             <div class="service-info">
                 <h2>Föreläsningar</h2>
                 <p>Engagerande föreläsningar om AI för att inspirera och informera.</p>
-                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Läs mer</button></router-link>
+                <CustomButton route="/services/" buttonText="Läs mer"/>
             </div>
         </div>
         <div class="service-card">
@@ -34,7 +35,7 @@
             <div class="service-info">
                 <h2>Kombinaton</h2>
                 <p>En mix av workshops och föreläsningar för djupare förståelse.</p>
-                <router-link :to="{ name: 'services' }"  ><button class="cta-button">Läs mer</button></router-link>
+                <CustomButton route="/services/" buttonText="Läs mer"/>
             </div>
         </div>
     </div>
@@ -42,8 +43,10 @@
 </template>
 <script>
 import { RouterLink } from 'vue-router'
+import CustomButton from '../components/CTA-button.vue';
     export default {
         name: 'Services',
+        components:{CustomButton},
     data() {
     return {
         services: [

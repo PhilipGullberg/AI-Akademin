@@ -104,12 +104,11 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: end;
   
 }
-
 .cta-right button {
   padding: 8px 12px;
-  background-color: #B8AD8B;
-  color: white;
-  border: none;
+  background-color: transparent;
+  color:  rgb(0, 0, 0);
+  border: 2px solid #B8AD8B;
   box-shadow: 1px 1px 1px 1px #0000005c;
   border-radius: 5px;
   cursor: pointer;
@@ -117,7 +116,8 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .cta-right button:hover {
-  background-color: #8D8362;
+  background-color: #B8AD8B;
+  color:White;
 }
 
 .logo img {

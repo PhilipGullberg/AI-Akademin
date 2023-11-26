@@ -6,7 +6,8 @@
             <h1>Lär dig AI: Interaktivt & Engagerande</h1>
             <p>Upptäck potentialen med AI genom våra interaktiva workshops och föreläsningar. Skräddarsydda för företag och skolor, oavsett kunskapsnivå.</p>
             <div class="cta-buttons">
-              <router-link to="/contact/" class="nav-links"><button class="cta-button">Boka nu</button></router-link>
+              <CustomButton route="/contact/" buttonText="Boka nu"/>
+              
               <button class="cta-button">Intro-video (30s)</button>
             </div>
           </div>
@@ -30,9 +31,10 @@ import ToolsMethods from "../components/ToolsMethods.vue"
 import BannerCTA from '../components/BannerCTA.vue';
 import WhyLearn from '../components/WhyLearn.vue';
 import Divider from "../components/DividerPage.vue";
+import CustomButton from '../components/CTA-button.vue';
 
 export default {
-    components: { AboutUs, ServicePage,ToolsMethods, BannerCTA, WhyLearn,Divider},
+    components: { AboutUs, ServicePage,ToolsMethods, BannerCTA, WhyLearn,Divider,CustomButton},
 }
 </script>
 <style scoped>
@@ -98,21 +100,24 @@ p {
 .cta-buttons {
   display: flex;
   gap: 10px;
+  
 }
 
 .cta-button {
   padding: 10px 20px;
-  background-color: #B8AD8B;
-  color: white;
-  border: none;
+  background-color: transparent;
+  color:  rgb(0, 0, 0);
+  border: 2px solid #B8AD8B;
+  font-size:0.9rem;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px 1px #0000005c;
-  transition: background-color 0.3s ease;
+  box-shadow: 1px 1px 2px 2px #0000005c;
+  transition: background-color 0.3s   ease;
 }
 
 .cta-button:hover {
-  background-color: #8D8362;
+  background-color: #B8AD8B;
+  color:White;
 
 }
 @media only screen and (max-width: 768px) {
