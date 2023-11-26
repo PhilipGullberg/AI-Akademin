@@ -102,7 +102,7 @@ import CustomButton from '../components/CTA-button.vue';
 .service-card {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.35), 0 15px 12px rgba(0,0,0,0.30);
   background-color: #fff;
   width: 300px;
   transition: transform 0.3s ease;

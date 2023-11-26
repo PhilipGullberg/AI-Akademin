@@ -30,7 +30,7 @@ export default {
   font-size:0.9rem;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 1px 1px 2px 2px #0000005c;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
   transition: background-color 0.3s   ease;
 }
 

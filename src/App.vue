@@ -109,7 +109,7 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: transparent;
   color:  rgb(0, 0, 0);
   border: 2px solid #B8AD8B;
-  box-shadow: 1px 1px 1px 1px #0000005c;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
