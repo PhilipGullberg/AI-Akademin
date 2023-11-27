@@ -50,23 +50,21 @@ h2 {
 }
 
 .cta-button {
-  padding: 15px 30px;
-  background-color: #8D8362;
-  color: #fff;
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
-  border: 1px black solid;
+  padding: 10px 20px;
+  background-color: transparent;
+  color:  rgb(255, 255, 255);
+  border: 2px solid #B8AD8B;
+  font-size:0.9rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-.cta-button a{
-    text-decoration: none;
-    color:white;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
+  transition: background-color 0.3s   ease;
 }
 
 .cta-button:hover {
-  background-color: #888B61;
+  background-color: #B8AD8B;
+  color:rgb(255, 255, 255);
+
 }
 @media (max-width: 800px) {
   h2{

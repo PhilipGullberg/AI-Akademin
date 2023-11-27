@@ -2,13 +2,13 @@
   "name": "aikunskap",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://philipgullberg.github.io/AI-Akademin/",
+  "homepage": "https://www.lardigai.se",
   "scripts": {
     "dev": "vite",
     "build": "vite build ",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "cd dist && copy index.html 404.html && cd .. && gh-pages -d dist"
+    "deploy": "cd dist && copy index.html 404.html && echo 'www.lardigai.se' > CNAME  && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "@builder.io/react": "^3.1.1",

@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),  
   ],
-  base: "/AI-Akademin/",
+  base: "/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

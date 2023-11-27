@@ -35,7 +35,7 @@
             <label for="freetext">Meddelande:</label>
             <textarea cols="50" rows="5" id="organization" v-model="formData.message"></textarea>
           </div>
-          <button type="submit">Skicka</button>
+          <button class="cta-button" type="submit">Skicka</button>
         </form>
         <div v-else class="thank-you-message">
           <h2>Tack för din förfrågan!</h2>
@@ -179,18 +179,23 @@
     border-radius: 5px;
   }
   
-  button {
-    background-color: #B8AD8B;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #726a4f;
-  }
+.cta-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color:  rgb(0, 0, 0);
+  border: 2px solid #B8AD8B;
+  font-size:0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
+  transition: background-color 0.3s   ease;
+}
+
+.cta-button:hover {
+  background-color: #B8AD8B;
+  color:White;
+
+}
   @media only screen and (max-width: 768px) {
     .contact-form {
         width: 95%;
