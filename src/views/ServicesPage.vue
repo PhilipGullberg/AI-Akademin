@@ -40,6 +40,9 @@
                     Få en detaljerad förståelse för AI:ens olika områden och verktyg.
                     Jobba praktiskt med verktygen och lär dig använda AI till din fördel i arbetslivet.
                 </p>
+                <br>
+                <h4>Tid: 1-2h</h4>
+                <h4>Pris: 4000-8000kr</h4>
                 <router-link to="/contact/" class="nav-links"><button class="cta-button" id="white">Boka nu</button></router-link>
             </div>
             <div class="section-image">
@@ -124,6 +127,9 @@
                     <p>
                        Få en rejäl introduktion och inspiration om AI, förstå vad hypen är och vad en AI faktiskt är för något. Välj mellan en kortare version eller en längre version, vi anpassar alla föreläsningar efter tidigare förkunskaper och teknisk bakgrund. Vi hjälper er förstå AI:s påverkan på samhället, hur olika AI fungerar och ger en inblick i framtiden med AI. Vi diskuterar fördelar och nackdelar. Se till att hänga med i utvecklingen.
                     </p>
+                    <br>
+                    <h4>Tid: 1-2h</h4>
+                    <h4>Pris: 5000-10000kr</h4>
                     <router-link to="/contact/" class="nav-links"><button class="cta-button">Boka nu</button></router-link>
                 </div>
                 <div class="section-image">
@@ -210,7 +216,9 @@
                     <p>
                         Den perfekta blandningen mellan teori och praktik. Bli inspirerade och förstå hur AI fungerar och gå sedan över och testa på själva. Vi anpassar innehållet till er organisation och bygger tillsammans fram idéer praktiska användningsområden att använda AI. Börja effektivisera ert arbete med AI nu!
                     </p>
-                   
+                    <br>
+                    <h4>Tid: 2-3h</h4>
+                    <h4>Pris: 7000-14000kr</h4>
                     <router-link to="/contact/" class="nav-links">  <button class="cta-button" id="white">Boka nu</button></router-link>
                 </div>
                 <div class="section-image">
