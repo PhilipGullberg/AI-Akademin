@@ -42,7 +42,7 @@
                 </p>
                 <br>
                 <h4>Tid: 1-2h</h4>
-                <h4>Pris: 4000-8000kr</h4>
+                <h4>Pris: 4999-9999kr</h4>
                 <router-link to="/contact/" class="nav-links"><button class="cta-button" id="white">Boka nu</button></router-link>
             </div>
             <div class="section-image">
@@ -129,7 +129,7 @@
                     </p>
                     <br>
                     <h4>Tid: 1-2h</h4>
-                    <h4>Pris: 5000-10000kr</h4>
+                    <h4>Pris: 3999-7999kr</h4>
                     <router-link to="/contact/" class="nav-links"><button class="cta-button">Boka nu</button></router-link>
                 </div>
                 <div class="section-image">
@@ -218,7 +218,7 @@
                     </p>
                     <br>
                     <h4>Tid: 2-3h</h4>
-                    <h4>Pris: 7000-14000kr</h4>
+                    <h4>Pris:6999-13999kr</h4>
                     <router-link to="/contact/" class="nav-links">  <button class="cta-button" id="white">Boka nu</button></router-link>
                 </div>
                 <div class="section-image">

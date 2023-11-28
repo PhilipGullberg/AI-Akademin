@@ -41,6 +41,7 @@
   color:White;
   margin: 0 auto;
   padding: 80px;
+ 
   
 }
 .card{
