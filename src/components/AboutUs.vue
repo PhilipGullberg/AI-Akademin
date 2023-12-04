@@ -17,12 +17,12 @@
             <div>
                 <h1>Om oss</h1>
                 <p>
-                  Vi på AI-Akademin brinner för att göra AI-utbildning tillgänglig och engagerande för alla. </p>
+                  Vi på lardigai.se brinner för att göra AI-utbildning tillgänglig och engagerande för alla. </p>
                   <p>Med en bakgrund inom datateknik och pedagogik strävar vi efter att erbjuda workshops och föreläsningar som kombinerar teknisk expertis med en lärorik upplevelse.
                 </p>
                 <br>
                 <p>
-                  Vår erfarenhet sträcker sig från att leda AI-utvecklingen på NTI-Gymnasiet till att skräddarsy kurser för olika företag. Vi tror på att öppna dörrar till AI-världen och skapa en lärandeupplevelse som är både informativ och inspirerande, och få er att börja använda AI praktiskt i ert arbetsliv.
+                  Vår erfarenhet sträcker sig från att leda AI-utvecklingen på 28 skolor till att skräddarsy kurser för olika företag. Vi tror på att öppna dörrar till AI-världen och skapa en lärandeupplevelse som är både informativ och inspirerande, och få er att börja använda AI praktiskt i ert arbetsliv.
                 </p>
                 <br>
                 
