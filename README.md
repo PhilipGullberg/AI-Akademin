@@ -1,4 +1,6 @@
- Lardigai.se
+# LärdigAI
+ 
+ www.Lardigai.se
 
 En hemsida som länkar skolor och orgainsationer med duktiga föreläsare och workshop om AI
 # Preview
