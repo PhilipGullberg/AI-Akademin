@@ -1,6 +1,9 @@
-#  Lardigai.se
+![image](https://github.com/PhilipGullberg/lardigai/assets/17159766/19ff695c-c9c5-4b62-8b9d-e45163c8c701)#  Lardigai.se
 
 En hemsida som länkar skolor och orgainsationer med duktiga föreläsare och workshop om AI
+# Preview
+![image](https://github.com/PhilipGullberg/lardigai/assets/17159766/eace43bd-997f-4e8a-b745-62eef747cd32)
+
 
 ## Project Setup
 
